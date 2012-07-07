@@ -31,7 +31,7 @@ wpc-pic.sh -h  .. to get help about "picture stack" creation
 
 More information can be found at the [wpc-homepage](http://wpc.tiddlyspace.com/)
 
-===TODO===
+###TODO
 * Support different screen resolutions.
 * Make the code better.
 
