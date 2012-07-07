@@ -23,13 +23,16 @@ Usage
 ./wpc-noloop .. will run the wallpaper creation process once. 
 ```
 
-```
+```    
 wpc.sh -h .. to get help about \"calendar\" creation 	
 wpc-note.sh -h to get help about \"sticky note\" creation 	
 wpc-pic.sh -h  .. to get help about \"picture stack\" creation 	
 ```
 
+More information can be found at the [wpc-homepage](http://wpc.tiddlyspace.com/)
+
 have fun!
 mario
 
 [1] http://www.imagemagick.org/script/index.php
+[2] http://wpc.tiddlyspace.com/

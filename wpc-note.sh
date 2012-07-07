@@ -7,7 +7,7 @@ source "$ARG0DIR/global"
 
 AREA="500x300"
 
-OUTFILE="$DWP/wpcCalendar.png"
+OUTFILE="$DWP/wpc-calendar.png"
 TEXT=$CALMARK
 
 background="$DTMP/sticky-cal.png"

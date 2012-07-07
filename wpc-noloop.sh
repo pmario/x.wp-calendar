@@ -30,7 +30,6 @@ help() {
 	echo $'\t' use: ./wpc.sh -h $'\t' .. to get help about \"calendar\" creation 	
 	echo $'\t' use: ./wpc-note.sh -h $'\t' .. to get help about \"sticky note\" creation 	
 	echo $'\t' use: ./wpc-pic.sh -h $'\t' .. to get help about \"picture stack\" creation 	
-	echo $'\t' use: ./wpc-caltext.sh -h $'\t' .. to get help about \"calendar text to png\" creation 	
 	
 	exit 0;
 }
