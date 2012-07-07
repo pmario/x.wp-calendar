@@ -1,6 +1,31 @@
-License: see global
+= Just an other wallpaper creator
 
-These scripts depend on imagemagick. So if you want to use them, make sure, you installed the dependencies.
+License: [Creative Commons: CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/3.0/")
+
+This project is work in progress. I do use it since several month now and it works nice with my configuration.
+
+It's designed for:
+
+* ubuntu 12.04, unity desktop
+* screen size 1920 x 1080
+* be sure, you have a "tmp" directory (the scripts don't create it at the moment)
+
+== Important
+
+These scripts depend on imagemagick [1]. So if you want to use them, make sure, you installed the dependencies.
+
+== Usage
+```
+./wpc-noloop .. will run the wallpaper creation process once. 
+```
+
+```
+wpc.sh -h .. to get help about \"calendar\" creation 	
+wpc-note.sh -h to get help about \"sticky note\" creation 	
+wpc-pic.sh -h  .. to get help about \"picture stack\" creation 	
+```
 
 have fun!
 mario
+
+[1] http://www.imagemagick.org/script/index.php
