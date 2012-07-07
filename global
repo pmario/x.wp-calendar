@@ -1,0 +1,57 @@
+set -o nounset
+set -o errexit
+
+version () {
+	echo "$ARG0, the wallpaper creator, Version 0.0.2"
+	echo "Copyright (C) Mario Pietsch 2012."
+	echo "License CC-BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/3.0/"
+	echo
+}
+
+usage() {
+	version
+	echo Usage:$'\t'$ARG0 [Options]
+}
+
+# Area used to create the calendar.
+AREA="500x400"
+
+# convert -list fonts | more .. displays a list of all fonts 
+# Text color dark brown
+TXT_FONT="dejavu-sans-mono-bold"
+TXT_COLOR="rgb(56,16,3)"
+
+MARKER_FONT="dejavu-sans-mono-bold"
+MARKER_COLOR="rgb(56,16,3)"
+
+# TODO home dir ~/.stikywp
+DHOME="$ARG0DIR"
+DTXT="$DHOME/txt"
+DWP="$DHOME/wp"
+DTMP="$DHOME/tmp"
+DPICS="$DHOME/pics"
+
+# temporary files.
+# calendar text
+CALTXT="$DTMP/tmp-text.png"
+
+# calendar text + marker eg: (28)
+CALMARK="$DTMP/sticky-cal-rotated.png"
+
+# background files. Just copy one of those to wp-bg-active.jpg
+#WPBG="$DWP/wp-bg-blue.jpg"
+#WPBG="$DWP/wp-bg-green.jpg"
+#WPBG="$DWP/wp-bg-brown.jpg"
+
+WPBG="$DWP/wp-bg-active.jpg"
+
+# finished wallpaper can be jpg
+RESULT="$DWP/wp-fin.jpg"
+
+# error handling
+error() {
+    echo "$ARG0: $*" 1>&2
+    exit 1
+}
+
+
