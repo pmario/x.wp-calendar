@@ -1,4 +1,5 @@
-=Just an other wallpaper creator
+Just an other wallpaper creator
+= 
 
 License: [Creative Commons: CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/3.0/")
 
@@ -10,11 +11,14 @@ It's designed for:
 * screen size 1920 x 1080
 * be sure, you have a "tmp" directory (the scripts don't create it at the moment)
 
-==Important
+Important
+--
 
 These scripts depend on imagemagick [1]. So if you want to use them, make sure, you installed the dependencies.
 
-==Usage
+Usage
+--
+
 ```
 ./wpc-noloop .. will run the wallpaper creation process once. 
 ```
