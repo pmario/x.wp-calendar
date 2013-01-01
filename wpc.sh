@@ -82,11 +82,8 @@ createCalText() {
 	# first week of the actual month. needed for day marker line calculation.
 	fw=`date "+%V" --date=$year"/"$month"/01"`
 
-	week=$((week + 10))
-	fw=$((fw + 10))
-
-	echo "fw: "$fw
-	echo "week: "$week
+	#echo "fw: "$fw
+	#echo "week: "$week
 
 	# due to the format of the calendar there has to be some corrections 
 	# to calclulate the right row/line for the actual day indicator
@@ -98,7 +95,9 @@ createCalText() {
 		local a=a
 		# no correction needed
 	else
-		week=$((week - fw))
+		# numbers with leading zeros are octal!
+		# 10#$week ... forces week to be base 10
+		week=$((10#$week - 10#$fw))
 	fi
 
 #	echo "fw: "$fw
