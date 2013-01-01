@@ -82,7 +82,11 @@ createCalText() {
 	# first week of the actual month. needed for day marker line calculation.
 	fw=`date "+%V" --date=$year"/"$month"/01"`
 
-	#echo "fw: "$fw
+	week=$((week + 10))
+	fw=$((fw + 10))
+
+	echo "fw: "$fw
+	echo "week: "$week
 
 	# due to the format of the calendar there has to be some corrections 
 	# to calclulate the right row/line for the actual day indicator
@@ -97,7 +101,8 @@ createCalText() {
 		week=$((week - fw))
 	fi
 
-	# echo "week: "$week
+#	echo "fw: "$fw
+#	echo "week: "$week
 
 	# create the calendar text
 	convert -size ${AREA} xc:transparent -font $TXT_FONT \
@@ -113,7 +118,7 @@ createDayMarker() {
 	dy="22"
 
 	xx=$(( iposx + dx * dow))
-	yy=$(( iposy + week * dy))
+	yy=$(( iposy + dy * week))
 
 	#echo $xx, $yy
 

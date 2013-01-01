@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # This file is not used at the moment.
-# It may be become the "put any text on a stiy-not"
+# It may be become the "put any text on a sticky-note"
 
 ARG0=$(basename $0 .sh)
 ARG0DIR=$(dirname $0)
