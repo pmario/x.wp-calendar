@@ -85,7 +85,7 @@ convert $background -gravity North -draw "image over 0,0 0,0 '$text'" $backgroun
 
 # rotate the finished note by a random angle. 
 convert $background \
-	-background  none   -rotate `convert null: -format '%[fx:rand()*4]' info:` \
+	-background  none   -rotate `convert null: -format '%[fx:rand()*4]' info:` +repage \
 	-background  black  \( +clone -shadow 60x6+4+4 \) +swap \
 	-background  none   -flatten \
 	"$output"
