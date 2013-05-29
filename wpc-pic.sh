@@ -57,7 +57,7 @@ createThumb() {
   convert $1  -thumbnail 400x250 \
 	-bordercolor white  -border 6 \
 	-bordercolor grey60 -border 1 \
-	-background  none   -rotate `convert null: -format '%[fx:rand()*20-10]' info:` \
+	-background  none   -rotate `convert null: -format '%[fx:rand()*20-10]' info:` +repage \
 	-background  black  \( +clone -shadow 60x6+4+4 \) +swap \
 	-background  none   -flatten $2
 }
