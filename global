@@ -2,7 +2,7 @@ set -o nounset
 set -o errexit
 
 version () {
-	echo "$ARG0, the wallpaper creator, Version 0.1.1"
+	echo "$ARG0, the wallpaper creator, Version 0.1.2"
 	echo "Copyright (C) Mario Pietsch 2012-2013."
 	echo "License CC-BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/3.0/"
 	echo

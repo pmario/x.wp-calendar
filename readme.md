@@ -7,7 +7,7 @@ This project is work in progress. I do use it since several month now and it wor
 
 It's designed for:
 
-* ubuntu 12.04, unity desktop
+* ubuntu >= 12.04, unity desktop
 * screen size 1920 x 1080
 * be sure, you have a "tmp" directory (the scripts don't create it at the moment)
 
